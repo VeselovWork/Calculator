@@ -6,14 +6,45 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UITableViewDelegate{
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let button_1 = UIButton (type: .system) as UIButton
+        button_1.backgroundColor = .blue
+        button_1.setTitle("1", for: .normal)
+        button_1.frame = CGRect(x: 5, y: 400, width: 100, height: 100)
+        button_1.layer.cornerRadius = 20
+        
+        self.view.addSubview(button_1)
+        
+        let button_2 = UIButton (type: .system) as UIButton
+        button_2.backgroundColor = .blue
+        button_2.setTitle("2", for: .normal)
+        button_2.frame = CGRect(x: 106, y: 400, width: 100, height: 100)
+        button_2.layer.cornerRadius = 20
+        
+        self.view.addSubview(button_2)
+        
+        let button_3 = UIButton (type: .system) as UIButton
+        button_3.backgroundColor = .blue
+        button_3.setTitle("3", for: .normal)
+        button_3.frame = CGRect(x: 207, y: 400, width: 100, height: 100)
+        button_3.layer.cornerRadius = 20
+        
+        self.view.addSubview(button_3)
+        
+        
+       
+        
+        
+        
+   
     }
 
-
 }
-
