@@ -11,6 +11,7 @@ import SnapKit
 
 class ViewController: UIViewController, UITableViewDelegate{
     
+    var MyTextField = UITextField ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,20 @@ class ViewController: UIViewController, UITableViewDelegate{
         button_3.layer.cornerRadius = 20
         
         self.view.addSubview(button_3)
+        
+        
+        let textFieldFrame = CGRect(x: 0, y: 0, width: 200, height: 31)
+        
+        MyTextField = UITextField(frame: textFieldFrame)
+        MyTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        MyTextField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
+        MyTextField.textAlignment = .center
+        MyTextField.placeholder = "enter"
+        MyTextField.center = self.view.center
+        
+        self.view.addSubview(MyTextField)
+        
+        
         
         
        
